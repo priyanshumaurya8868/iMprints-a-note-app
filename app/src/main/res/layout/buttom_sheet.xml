@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottomSheetContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/dark_dialogs_color"
+    android:orientation="vertical"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+
+
+    <LinearLayout
+        android:id="@+id/bottomSheetlinearLayout1_miscelleanous"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/ic_addImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            app:srcCompat="@drawable/ic_mage"
+            app:tint="@color/white"
+            android:contentDescription="@string/app_name" />
+
+        <ImageView
+            android:id="@+id/ic_addWebLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_sharp_insert_link_24"
+            app:tint="@color/white"
+            android:contentDescription="@string/app_name" />
+
+        <!--        <RelativeLayout-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:layout_weight="1">-->
+
+        <!--            <ImageView-->
+        <!--                android:id="@+id/imageView5"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_alignParentRight="true"-->
+        <!--                app:srcCompat="@drawable/ic_more_horiz_" />-->
+        <!--        </RelativeLayout>-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomSheetlinearLayout2_colorRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_dialogs_color"
+        android:orientation="horizontal"
+        android:padding="@dimen/_5sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bottomSheetlinearLayout1_miscelleanous">
+
+
+        <FrameLayout
+            android:id="@+id/bs_farme_lay_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp">
+
+
+            <View
+                android:id="@+id/bs_colour_view_1"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/note_colour_1" />
+
+            <ImageView
+                android:id="@+id/colorTick1"
+                android:contentDescription="@string/app_name"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center"
+                android:alpha="0"
+                app:srcCompat="@drawable/ic_baseline_check_24" />
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/bs_farme_lay_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp">
+
+
+            <View
+                android:id="@+id/bs_colour_view_2"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/note_colour_2" />
+
+            <ImageView
+                android:id="@+id/colorTick2"
+                android:layout_width="16dp"
+                android:contentDescription="@string/app_name"
+                android:layout_height="16dp"
+                android:layout_gravity="center"
+                android:alpha="0"
+                app:srcCompat="@drawable/ic_black_tick" />
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/bs_farme_lay_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp">
+
+
+            <View
+                android:id="@+id/bs_colour_view_3"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/note_colour_3" />
+
+            <ImageView
+                android:id="@+id/colorTick3"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:contentDescription="@string/app_name"
+                android:layout_gravity="center"
+                android:alpha="0"
+                app:srcCompat="@drawable/ic_baseline_check_24" />
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/bs_farme_lay_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp">
+
+
+            <View
+                android:id="@+id/bs_colour_view_4"
+                android:layout_width="24dp"
+                android:contentDescription="@string/app_name"
+                android:layout_height="24dp"
+                android:background="@drawable/note_colour_4" />
+
+            <ImageView
+                android:id="@+id/colorTick4"
+                android:contentDescription="@string/app_name"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center"
+                android:alpha="0"
+                app:srcCompat="@drawable/ic_baseline_check_24" />
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/bs_farme_lay_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp">
+
+
+            <View
+                android:id="@+id/bs_colour_view_5"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/note_colour_5" />
+
+            <ImageView
+                android:id="@+id/colorTick5"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:contentDescription="@string/app_name"
+                android:layout_gravity="center"
+                android:alpha="0"
+                app:srcCompat="@drawable/ic_baseline_check_24" />
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/bs_farme_lay_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp">
+
+
+            <View
+                android:id="@+id/bs_colour_view_6"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/note_colour_6" />
+
+            <ImageView
+                android:id="@+id/colorTick6"
+                android:contentDescription="@string/app_name"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center"
+                android:alpha="0"
+                app:srcCompat="@drawable/ic_baseline_check_24" />
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/bs_farme_lay_7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp">
+
+
+            <View
+                android:id="@+id/bs_colour_view_7"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/note_colour_7" />
+
+            <ImageView
+                android:id="@+id/colorTick7"
+                android:contentDescription="@string/app_name"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center"
+                android:alpha="0"
+                app:srcCompat="@drawable/ic_baseline_check_24" />
+
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomSheetlinearLayout3_colorRow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_dialogs_color"
+        android:orientation="horizontal"
+        android:padding="@dimen/_5sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bottomSheetlinearLayout2_colorRow1">
+
+
+        <FrameLayout
+            android:id="@+id/bs_farme_lay_8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp">
+
+
+            <View
+                android:id="@+id/bs_colour_view_8"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/note_colour_8" />
+
+            <ImageView
+                android:id="@+id/colorTick8"
+                android:contentDescription="@string/app_name"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center"
+                android:alpha="0"
+                app:srcCompat="@drawable/ic_baseline_check_24" />
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/bs_farme_lay_9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp">
+
+
+            <View
+                android:id="@+id/bs_colour_view_9"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/note_colour_9" />
+
+            <ImageView
+                android:id="@+id/colorTick9"
+                android:contentDescription="@string/app_name"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center"
+                android:alpha="0"
+                app:srcCompat="@drawable/ic_baseline_check_24" />
+
+
+        </FrameLayout>
+
+        <FrameLayout
+
+            android:id="@+id/bs_farme_lay_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp">
+
+
+            <View
+                android:id="@+id/bs_colour_view_10"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/note_colour_10" />
+
+            <ImageView
+                android:id="@+id/colorTick10"
+                android:contentDescription="@string/app_name"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center"
+                android:alpha="0"
+                app:srcCompat="@drawable/ic_baseline_check_24" />
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/bs_farme_lay_11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp">
+
+
+            <View
+                android:id="@+id/bs_colour_view_11"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/note_colour_11" />
+
+            <ImageView
+                android:id="@+id/colorTick11"
+                android:contentDescription="@string/app_name"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center"
+                android:alpha="0"
+                app:srcCompat="@drawable/ic_baseline_check_24" />
+
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/bs_farme_lay_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp">
+
+
+            <View
+                android:id="@+id/bs_colour_view_12"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/note_colour_12" />
+
+            <ImageView
+                android:id="@+id/colorTick12"
+                android:contentDescription="@string/app_name"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center"
+                android:alpha="0"
+                app:srcCompat="@drawable/ic_baseline_check_24" />
+
+
+        </FrameLayout>
+
+        <FrameLayout
+
+            android:id="@+id/bs_farme_lay_13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp">
+
+
+            <View
+                android:id="@+id/bs_colour_view_13"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/note_colour_13" />
+
+            <ImageView
+                android:id="@+id/colorTick13"
+                android:contentDescription="@string/app_name"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center"
+                android:alpha="0"
+                app:srcCompat="@drawable/ic_baseline_check_24" />
+
+
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/bs_farme_lay_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5sdp">
+
+
+            <View
+                android:id="@+id/bs_colour_view_14"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/note_colour_14" />
+
+            <ImageView
+                android:id="@+id/colorTick14"
+                android:contentDescription="@string/app_name"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center"
+                android:alpha="0"
+                app:srcCompat="@drawable/ic_baseline_check_24" />
+
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomSheetlinearLayout4_delete"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/dark_dialogs_color"
+        android:padding="@dimen/_5sdp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:contentDescription="@string/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_delete"
+            android:layout_marginLeft="@dimen/_10sdp"
+            app:tint="@color/delete_background"
+            android:layout_marginStart="@dimen/_10sdp" />
+
+        <TextView
+            android:id="@+id/crt_delete_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Delete Note"
+            android:textColor="@color/delete_background"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginLeft="@dimen/_5sdp" />
+
+
+
+    </LinearLayout>
+</LinearLayout>

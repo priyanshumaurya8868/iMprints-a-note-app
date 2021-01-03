@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/webLinkDialogContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_10sdp"
+    android:background="@drawable/dialogs_background">
+
+    <ImageView
+        android:id="@+id/delete_dialog_title_imgView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:padding="@dimen/_8sdp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_sharp_insert_link_24"
+        app:tint="@color/tealPrimary" />
+
+    <TextView
+        android:id="@+id/dialog_add_url_title_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_8sdp"
+        android:text="Add URL"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_13sdp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/delete_dialog_title_imgView"
+        app:layout_constraintLeft_toRightOf="@+id/delete_dialog_title_imgView" />
+
+    <TextView
+        android:id="@+id/dialog_add_url_discription_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_8sdp"
+        android:text="Enter a valid URL link."
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10sdp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_add_url_title_textView" />
+
+    <EditText
+        android:id="@+id/url_editText_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:hint="Enter URL"
+        android:inputType="textWebEditText"
+        android:paddingLeft="@dimen/_8sdp"
+        android:paddingRight="@dimen/_8sdp"
+        android:theme="@style/ThemeOverlay.search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_add_url_discription_textView" />
+
+    <TextView
+        android:id="@+id/cancel_inputLink_response_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/_8sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_8sdp"
+        android:text="CANCEL"
+        android:textColor="@color/tealPrimary"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/add_inputLink_response_dialog"
+        app:layout_constraintTop_toBottomOf="@+id/url_editText_dialog" />
+
+    <TextView
+        android:id="@+id/add_inputLink_response_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/_11sdp"
+        android:paddingTop="@dimen/_8sdp"
+        android:paddingRight="@dimen/_11sdp"
+        android:paddingBottom="@dimen/_8sdp"
+        android:text="ADD"
+        android:textColor="@color/tealPrimary"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/cancel_inputLink_response_dialog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/url_editText_dialog"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialogs_background">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_discrd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_7sdp"
+        app:cardBackgroundColor="@color/dark_dialogs_color"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardElevation="@dimen/_5sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/dialog_discard_changes_discription_textView"
+                android:layout_width="386dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_15sdp"
+                android:text="Save your changes or discard them?"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+     <TextView
+         android:id="@+id/cancel_discard_changes_response_dialog"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:padding="@dimen/_10sdp"
+         android:text="CANCEL"
+         android:textColor="@color/tealPrimary"
+         android:textStyle="bold"
+         android:layout_toLeftOf="@id/discard_discard_changes_note_response_dialog"
+
+            />
+
+     <TextView
+         android:id="@+id/discard_discard_changes_note_response_dialog"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:padding="@dimen/_10sdp"
+         android:text="DISCARD"
+         android:textColor="@color/tealPrimary"
+         android:textStyle="bold"
+          android:layout_toLeftOf="@id/save_discard_changes_response_dialog"/>
+
+     <TextView
+         android:id="@+id/save_discard_changes_response_dialog"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:padding="@dimen/_10sdp"
+         android:text="SAVE"
+         android:textColor="@color/tealPrimary"
+         android:textStyle="bold"
+         android:layout_alignParentRight="true" />
+ </RelativeLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

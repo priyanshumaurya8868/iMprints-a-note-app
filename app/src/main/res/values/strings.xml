@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">iMprints</string>
+    <string name="search">Search your notes...</string>
+    <string name="my_notes_tittle_bar">My Notes</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="notes_tittle">Notes Title</string>
+    <string name="notes_desc">Enter Note Here...</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="untitled">Untitled</string>
+
+</resources>

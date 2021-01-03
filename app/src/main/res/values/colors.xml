@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="light_black">#282829</color>
+    <color name="faded_black">#2D2E37</color>
+    <color name="yellow">#F7FF00</color>
+    <color name="blue">#0037FF</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#CDBEBE</color>
+    <color name="tealPrimary">#0091EA</color>
+    <color name="delete_background">#FB2A2A</color>
+    <color name="dark_dialogs_color">#101010</color>
+
+    <!--    colours for notes-->
+    <color name="defaultNoteColour">#1C1F2C</color>
+    <color name="whiteNoteColour">#FFFFFFFF</color>
+    <color name="TealNoteColour">#00ACC1</color>
+    <color name="holoRed">#ffff4444</color>
+    <color name="orangeNoteColour">#FF580A</color>
+    <color name="pinkNoteColour">#E91E63</color>
+    <color name="redNoteColour">#D10F0F</color>
+    <color name="yellowNoteColour">#FFB402</color>
+    <color name="greenNoteColour">#04C10C</color>
+    <color name="green2NoteColour">#00895E</color>
+    <color name="purpleNoteColour">#9C27B0</color>
+    <color name="purple2Notecolour">#FF6200EE</color>
+    <color name="blueNoteColour">#303F9F</color>
+    <color name="blue2NoteColour">#0D25BF</color>
+</resources>
